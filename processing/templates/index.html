@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+  <title>カメラ画像加工アプリ</title>
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+  <link rel="stylesheet" href="./static/style.css" />
+</head>
+
+<body>
+  <ons-page>
+    <ons-toolbar fixed-style>
+      <div class="center">カメラ画像加工アプリ</div>
+    </ons-toolbar>
+
+    <img id="stream-box" src="/stream">
+    <section style="padding: 15px">
+      <ons-button id="shot-button" onclick="cameraShot()" modifier="large--cta">撮影＆加工</ons-button>
+    </section>
+
+    <ons-card id="kakou-card">
+      <b>加工後の写真</b>
+      <p></p>
+      <img id="kakou-image" src="">
+    </ons-card>
+
+  </ons-page>
+
+  <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+  <script src="https://unpkg.com/axios@1.4.0/dist/axios.min.js"></script>
+  <script src="./static/main.js"></script>
+
+</body>
+
+</html>
