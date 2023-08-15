@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<head>
+  <title>カメラ画像加工アプリ（履歴機能付き）</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="./static/style.css" />
+</head>
+
+<body>
+  <h3>カメラ画像加工アプリ（履歴機能付き）</h3>
+
+  <div><button id="shot-button" onclick="cameraShot()">撮影＆加工</button></div>
+
+  <img id="stream-box" src="/stream">
+
+  <h3>ー履歴ー</h3>
+
+  <ul id="items"></ul>
+
+  <script src="https://unpkg.com/axios@1.4.0/dist/axios.min.js"></script>
+  <script src="./static/main.js"></script>
+
+</body>
+
+</html>
