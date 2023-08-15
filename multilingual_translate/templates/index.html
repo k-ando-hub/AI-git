@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+  <title>多機能翻訳アプリ</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+  <link rel="stylesheet" href="./static/style.css" />
+</head>
+
+<body>
+
+  <ons-page>
+    <ons-toolbar fixed-style>
+      <div class="center">多機能翻訳アプリ</div>
+    </ons-toolbar>
+    
+    <section style="padding: 10px">
+      <select class="select-input" id="source-language">
+        <option value="ja">日本語</option>
+        <option value="en">英語</option>
+        <option value="es">スペイン語</option>
+        <option value="fr">フランス語</option>    
+      </select>
+
+      <textarea id="input-text" class="textarea" placeholder="翻訳前の文章"></textarea>
+    </section>
+
+    <section style="padding: 10px">
+      <ons-button onclick="translateText()" modifier="large--cta">翻訳</ons-button>
+    </section>
+
+    <section style="padding: 10px;">
+      <select class="select-input" id="target-language">
+        <option value="en">英語</option>
+        <option value="ja">日本語</option>
+        <option value="es">スペイン語</option>
+        <option value="fr">フランス語</option>    
+      </select>
+
+      <textarea id="output-text" class="textarea" placeholder="翻訳後の文章"></textarea>
+    </section>    
+
+  </ons-page>
+
+  <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+  <script src="https://unpkg.com/axios@1.4.0/dist/axios.min.js"></script>
+  <script src="./static/main.js"></script>
+
+</body>
+
+</html>
